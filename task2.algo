@@ -1,0 +1,25 @@
+ALGORITHM Task_2
+VAR
+    set1, set2: array of INTEGER [20]
+    i,j,  sum1, sum2: INTEGER:=0
+   exist :BOOLEAN :=false
+BEGIN
+    
+ for i from 0 to set1.length do 
+
+FOR j FROM 0 TO set2.length  DO
+    IF (set1[i]=set2[j]) THEN
+      exist=true
+      break 
+    END_IF
+END_FOR
+
+    if(NOT exist )then 
+    (sum1:=sum1+set1[i])
+
+
+ end for
+
+
+
+END
